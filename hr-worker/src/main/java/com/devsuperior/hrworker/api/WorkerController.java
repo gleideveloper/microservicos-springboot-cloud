@@ -1,7 +1,7 @@
 package com.devsuperior.hrworker.api;
 
 
-import com.devsuperior.hrworker.entitier.Worker;
+import com.devsuperior.hrworker.entities.Worker;
 import com.devsuperior.hrworker.service.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

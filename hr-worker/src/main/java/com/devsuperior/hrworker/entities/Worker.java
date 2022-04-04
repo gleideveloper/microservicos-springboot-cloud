@@ -1,4 +1,4 @@
-package com.devsuperior.hrworker.entitier;
+package com.devsuperior.hrworker.entities;
 
 import lombok.Data;
 

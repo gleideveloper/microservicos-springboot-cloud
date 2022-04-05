@@ -4,5 +4,6 @@
       "name": "hr-worker.host",
       "type": "java.lang.String",
       "description": "Description for hr-worker.host."
-  }
-] }
+    }
+  ]
+}

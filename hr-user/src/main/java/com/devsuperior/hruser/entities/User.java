@@ -18,6 +18,8 @@ public class User implements Serializable {
     @Column(name = "id_user", nullable = false)
     private Long id;
     private String name;
+
+    @Column(unique = true)
     private String email;
     private String password;
 

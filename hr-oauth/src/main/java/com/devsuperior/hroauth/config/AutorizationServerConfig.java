@@ -31,6 +31,7 @@ public class AutorizationServerConfig extends AuthorizationServerConfigurerAdapt
     @Autowired
     private JwtTokenStore tokenStore;
 
+    @Autowired
     private AuthenticationManager authenticationManager;
 
     @Override

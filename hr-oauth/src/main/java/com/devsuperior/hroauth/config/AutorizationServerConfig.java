@@ -16,11 +16,11 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @Configuration
 @EnableAuthorizationServer
 public class AutorizationServerConfig extends AuthorizationServerConfigurerAdapter {
-   /* @Value("${oauth.client.name}")
+    @Value("${oauth.client.name}")
     private String clientName;
 
     @Value("${oauth.client.secret}")
-    private String clientSecret;*/
+    private String clientSecret;
 
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
@@ -43,8 +43,8 @@ public class AutorizationServerConfig extends AuthorizationServerConfigurerAdapt
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("myappname123")
-                .secret(passwordEncoder.encode("myappsecret123"))
+                .withClient(clientName)
+                .secret(passwordEncoder.encode(clientSecret))
                 .scopes("read","write")
                 .authorizedGrantTypes("password")
                 .accessTokenValiditySeconds(86400);

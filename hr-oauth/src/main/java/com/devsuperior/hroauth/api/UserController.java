@@ -1,4 +1,4 @@
-package com.devsuperior.hroauth.resources;
+package com.devsuperior.hroauth.api;
 
 import com.devsuperior.hroauth.entities.User;
 import com.devsuperior.hroauth.services.UserService;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResource {
+public class UserController {
     @Autowired
     private UserService service;
 
